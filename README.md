@@ -1,8 +1,10 @@
+---
 Network Traffic Monitor – Mini Intrusion Detection System (IDS)
-
+---
 A Python-based network traffic monitoring and intrusion detection dashboard that captures live packets, analyzes TCP/IP behavior, detects common attack patterns, and visualizes security alerts through a web interface.
 This project is designed as an intermediate-level cybersecurity portfolio project, demonstrating real-world packet analysis, rule-based detection logic, and backend visualization.
 
+---
 🔐 Key Features
 
 Live network packet capture using Scapy
@@ -17,7 +19,7 @@ Blacklisted IP traffic
 Alert deduplication with configurable thresholds
 Web-based dashboard using Flask
 Clean, modular architecture
-
+---
 🛠️ Tech Stack
 Component	Technology
 Language	Python
@@ -38,7 +40,7 @@ Flags abnormal protocol behavior outside standard TCP/UDP traffic patterns.
 
 4. Blacklisted IP Detection
 Immediately raises alerts for traffic originating from known malicious IP addresses.
-
+```
 🗂️ Project Structure
 network-traffic-monitor/
 │
@@ -53,21 +55,23 @@ network-traffic-monitor/
 │   └── charts.js          # Chart.js visualizations
 │
 └── README.md
+```
 
 ⚙️ Installation & Setup (Kali Linux)
 
 ⚠️ Packet sniffing requires root privileges and a Linux environment.
-
+```
 1. Install System Dependencies
 sudo apt update
 sudo apt install -y python3-pip libpcap-dev tcpdump
-
+```
+```
 2. Install Python Dependencies
 pip3 install flask scapy pyshark
-
+```
 3. Verify Scapy Installation
 python3 -c "from scapy.all import sniff"
-
+```
 
 (No warnings = ready)
 
